@@ -15,7 +15,8 @@ export const PlaceOrder = () => {
         <input type="email" placeholder="Email address" />
         <input type="text" placeholder="street" />
         <div className="multi-fields">
-          <input type="text" placeholder="City" />
+          <input type="text" placeholder="City" />git mv src/pages/placeOrders/PlaceOrder.css src/pages/placeOrders/temp.css
+
           <input type="text" placeholder="State" />
         </div>
         <div className="multi-fields">

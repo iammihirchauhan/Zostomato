@@ -57,8 +57,8 @@
   border: none;
   color: white;
   background-color: tomato;
-  width: max(15vw, 200px);
-  padding: 12px 0px;
+  width: max(15vw, 150px);
+  padding: 10px 0px;
   border-radius: 4px;
   cursor: pointer;
 }
@@ -96,12 +96,16 @@
   border-radius: 4px;
 }
 
-
-@media(max-width:750px) {
-  .cart-bottom{
+@media (max-width: 750px) {
+  .cart-bottom {
     flex-direction: column-reverse;
   }
-  .cart-promocode{
+  .cart-promocode {
     justify-content: start;
+  }
+  .cart-total button {
+    width: 140px;
+    padding: 10px;
+    margin-left: -11px;
   }
 }

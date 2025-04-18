@@ -15,7 +15,7 @@ export const PlaceOrder = () => {
         <input type="email" placeholder="Email address" />
         <input type="text" placeholder="street" />
         <div className="multi-fields">
-          <input type="text" placeholder="City" />git mv src/pages/placeOrders/PlaceOrder.css src/pages/placeOrders/temp.css
+          <input type="text" placeholder="City" />
 
           <input type="text" placeholder="State" />
         </div>
@@ -30,6 +30,11 @@ export const PlaceOrder = () => {
           <h2>cart Totals</h2>
           <div>
             <div className="cart-total-details">
+              <p>Subtotal</p>
+              <p>${getTotalcartAmount()}</p>
+            </div>
+            <hr />
+            <div className="cart-total-details">
               <p>Delevery Fee</p>
               <p>${getTotalcartAmount() === 0 ? 0 : 2}</p>
             </div>
@@ -41,7 +46,7 @@ export const PlaceOrder = () => {
               </p>
             </div>
           </div>
-          <button>PROCEED TO PAYMENT</button>
+          <button className="pay-btn">PROCEED TO PAYMENT</button>
         </div>
       </div>
     </form>

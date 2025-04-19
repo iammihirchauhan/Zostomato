@@ -46,7 +46,7 @@ export const PlaceOrder = () => {
               </p>
             </div>
           </div>
-          <button className="pay-btn">PROCEED TO PAYMENT</button>
+          <button>PROCEED TO PAYMENT</button>
         </div>
       </div>
     </form>

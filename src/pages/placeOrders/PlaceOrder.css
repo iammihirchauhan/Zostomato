@@ -1,9 +1,10 @@
 .place-order {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: space-between;
   gap: 50px;
-  margin-top: 100px;
+  margin-top: 20px;
 }
 
 .place-order-left {
@@ -12,6 +13,7 @@
 }
 
 .place-order-left .title {
+  text-align: center;
   font-size: 30px;
   font-weight: 600;
   margin-bottom: 50px;
@@ -46,10 +48,14 @@
   .cart-total {
     width: 60%;
   }
-  .pay-btn {
-    margin-left: -22px;
-  }
   .cart-total h2 {
     width: 200px;
   }
+  .place-order-right{
+    margin-left: 70px;
+  }
+  .place-order .cart-total button {
+    width: 200px;
+  }
+ 
 }

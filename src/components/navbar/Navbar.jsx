@@ -11,7 +11,7 @@ export const Navbar = ({ setShowLogin }) => {
 
   return (
     <nav className="navbar">
-      <Link to="/"> 
+      <Link to="/">
         <img src={assets.tomato_logo} className="logo" alt="" />
       </Link>
       <ul className="navbar-menu">

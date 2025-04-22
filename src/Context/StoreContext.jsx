@@ -1,9 +1,9 @@
-import { createContext, useEffect, useState } from "react";
+import { createContext, useState } from "react";
 import { food_list } from "../assets/assets";
 
 export const StoreContext = createContext(null);
 
-const StoreContextProvider = (props) => {
+const StoreContextProvider = ({ children }) => {
   const [cartItems, setCartItems] = useState({});
 
   const addToCart = (itemId) => {
@@ -39,8 +39,8 @@ const StoreContextProvider = (props) => {
   };
   return (
     <StoreContext.Provider value={contextValue}>
-      {props.children}
-    </StoreContext.Provider>
+      {children} //represent component (jsx represent)//
+    </StoreContext.Provider> //that (.) means what will be in side provider it will show a contaxt value//
   );
 };
 
